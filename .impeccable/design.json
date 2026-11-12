@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T20:45:00Z",
+  "title": "Design System: CutOut Studio",
+  "extensions": {
+    "colorMeta": {
+      "federal-blue": {
+        "role": "primary",
+        "displayName": "Federal Blue",
+        "canonical": "oklch(43.9% 0.183 267)",
+        "tonalRamp": [
+          "oklch(15% 0.083 267)",
+          "oklch(27% 0.113 267)",
+          "oklch(39% 0.143 267)",
+          "oklch(51% 0.173 267)",
+          "oklch(63% 0.163 267)",
+          "oklch(75% 0.133 267)",
+          "oklch(85% 0.108 267)",
+          "oklch(95% 0.083 267)"
+        ]
+      },
+      "fluorescent-red": {
+        "role": "secondary",
+        "displayName": "Fluorescent Red-Orange",
+        "canonical": "oklch(67.8% 0.212 33)",
+        "tonalRamp": [
+          "oklch(15% 0.096 33)",
+          "oklch(27% 0.131 33)",
+          "oklch(39% 0.166 33)",
+          "oklch(51% 0.200 33)",
+          "oklch(63% 0.189 33)",
+          "oklch(75% 0.154 33)",
+          "oklch(85% 0.125 33)",
+          "oklch(95% 0.096 33)"
+        ]
+      },
+      "sunflower-yellow": {
+        "role": "tertiary",
+        "displayName": "Sunflower Yellow",
+        "canonical": "oklch(86.1% 0.163 87)",
+        "tonalRamp": [
+          "oklch(15% 0.074 87)",
+          "oklch(27% 0.101 87)",
+          "oklch(39% 0.127 87)",
+          "oklch(51% 0.154 87)",
+          "oklch(63% 0.145 87)",
+          "oklch(75% 0.119 87)",
+          "oklch(85% 0.096 87)",
+          "oklch(95% 0.074 87)"
+        ]
+      },
+      "warm-paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "oklch(93.5% 0.021 86)",
+        "tonalRamp": [
+          "oklch(15% 0.010 86)",
+          "oklch(27% 0.013 86)",
+          "oklch(39% 0.016 86)",
+          "oklch(51% 0.020 86)",
+          "oklch(63% 0.019 86)",
+          "oklch(75% 0.015 86)",
+          "oklch(85% 0.012 86)",
+          "oklch(95% 0.010 86)"
+        ]
+      },
+      "overprint-plum": {
+        "role": "neutral",
+        "displayName": "Overprint Plum (blue over red)",
+        "canonical": "oklch(24.6% 0.066 310)",
+        "tonalRamp": [
+          "oklch(15% 0.030 310)",
+          "oklch(27% 0.041 310)",
+          "oklch(39% 0.052 310)",
+          "oklch(51% 0.062 310)",
+          "oklch(63% 0.059 310)",
+          "oklch(75% 0.048 310)",
+          "oklch(85% 0.039 310)",
+          "oklch(95% 0.030 310)"
+        ]
+      },
+      "overprint-green": {
+        "role": "neutral",
+        "displayName": "Overprint Green (blue over yellow)",
+        "canonical": "oklch(58.1% 0.117 157)",
+        "tonalRamp": [
+          "oklch(15% 0.053 157)",
+          "oklch(27% 0.072 157)",
+          "oklch(39% 0.091 157)",
+          "oklch(51% 0.111 157)",
+          "oklch(63% 0.104 157)",
+          "oklch(75% 0.085 157)",
+          "oklch(85% 0.069 157)",
+          "oklch(95% 0.053 157)"
+        ]
+      },
+      "red-tint-skin": {
+        "role": "neutral",
+        "displayName": "Red Tint",
+        "canonical": "oklch(83.6% 0.077 40)",
+        "tonalRamp": [
+          "oklch(15% 0.035 40)",
+          "oklch(27% 0.048 40)",
+          "oklch(39% 0.060 40)",
+          "oklch(51% 0.073 40)",
+          "oklch(63% 0.069 40)",
+          "oklch(75% 0.056 40)",
+          "oklch(85% 0.045 40)",
+          "oklch(95% 0.035 40)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The page headline: uppercase, one short word group per line, misregistered."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings; 6.5vw in narrow columns, 10vw for the closing statement."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step headings."
+      },
+      "term": {
+        "displayName": "Term",
+        "purpose": "Left-column terms of the spec sheet."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Sequence numbers of real ordered steps, yellow on blue."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button labels (1.2rem small) and the wordmark (1.6rem)."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The paragraph under the headline; section intros at 1.2rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text, 34-36ch beside an image, up to 60ch stacked."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels, tool buttons, tags, nav links, status messages."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Figure captions, notes, footer."
+      }
+    },
+    "shadows": [
+      {
+        "name": "misregistered-plate",
+        "value": "text-shadow: -0.035em 0.03em 0 #ff5533",
+        "purpose": "The red ghost behind display type on paper and on blue (--reg-x, --reg-y)."
+      },
+      {
+        "name": "slipped-plate",
+        "value": "box-shadow: 5px 5px 0 0 #2743b5; translate: -2px -2px",
+        "purpose": "Button hover on paper; flat (0 0 0 0) at rest and on press."
+      },
+      {
+        "name": "slipped-plate-on-red",
+        "value": "box-shadow: 5px 5px 0 0 #ffc933; translate: -2px -2px",
+        "purpose": "Button hover on the red field."
+      },
+      {
+        "name": "tipped-in-plate",
+        "value": "solid block, translate: clamp(0.5rem, 1.2vw, 1rem) clamp(0.5rem, 1.2vw, 1rem)",
+        "purpose": "One ink plate behind every screenshot: red by default, yellow alternate on blue, blue on yellow."
+      },
+      {
+        "name": "grain-dark",
+        "value": "feTurbulence fractalNoise 0.9 x2, mix-blend-mode: multiply, opacity 0.2",
+        "purpose": "Paper tooth over the whole sheet."
+      },
+      {
+        "name": "grain-light",
+        "value": "feTurbulence fractalNoise 1.3 x1, mix-blend-mode: screen, opacity 0.16",
+        "purpose": "Ink speckle over the whole sheet."
+      }
+    ],
+    "motion": [
+      {
+        "name": "step",
+        "value": "steps(3, end)",
+        "purpose": "Timing function for every control transition (--step); nothing is eased."
+      },
+      {
+        "name": "duration-control",
+        "value": "0.12s",
+        "purpose": "Button plate slip; 0.1s for the Capture scale."
+      },
+      {
+        "name": "capture-flash",
+        "value": "opacity 0.15 to 1, 0.18s steps(2, end)",
+        "purpose": "Stage flash when a frame is captured."
+      },
+      {
+        "name": "playback",
+        "value": "12 fps (1000 / 12 ms interval)",
+        "purpose": "Frame playback on the stage, never interpolated."
+      },
+      {
+        "name": "onion-ghosts",
+        "value": "red ink, multiply, opacity 0.2 and 0.42",
+        "purpose": "The two previous poses under the current one."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transitions none, flash none, no autoplay, scroll-behavior auto",
+        "purpose": "Behaviour under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "56rem"
+      },
+      {
+        "name": "compact",
+        "value": "40rem"
+      },
+      {
+        "name": "max-width",
+        "value": "100rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Red ink block with plum poster lettering; the blue plate slips out on hover. The main action on paper.",
+      "html": "<button class=\"ds-btn\">Join the waitlist</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 1.4rem; border: 0; border-radius: 0; font: 900 1.45rem/1 var(--display); text-transform: uppercase; letter-spacing: 0.02em; cursor: pointer; white-space: nowrap; transition: box-shadow 0.12s steps(3, end), translate 0.12s steps(3, end); } .ds-btn { background: var(--red); color: var(--plum); box-shadow: 0 0 0 0 var(--blue); } .ds-btn:hover { box-shadow: 5px 5px 0 0 var(--blue); translate: -2px -2px; } .ds-btn:active { box-shadow: 0 0 0 0 var(--blue); translate: 0 0; } .ds-btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }"
+    },
+    {
+      "name": "Button on Red",
+      "kind": "button",
+      "refersTo": "button-on-red",
+      "description": "Plum block with paper lettering for the red field; the slipped plate is yellow.",
+      "html": "<div class=\"ds-onred\"><button class=\"ds-btn-onred\">Join the waitlist</button></div>",
+      "css": ".ds-onred { background: var(--red); padding: 1.5rem; } .ds-btn-onred { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 1.4rem; border: 0; border-radius: 0; font: 900 1.45rem/1 var(--display); text-transform: uppercase; letter-spacing: 0.02em; cursor: pointer; white-space: nowrap; transition: box-shadow 0.12s steps(3, end), translate 0.12s steps(3, end); } .ds-btn-onred { background: var(--plum); color: var(--paper); box-shadow: 0 0 0 0 var(--yellow); } .ds-btn-onred:hover { box-shadow: 5px 5px 0 0 var(--yellow); translate: -2px -2px; } .ds-btn-onred:active { box-shadow: 0 0 0 0 var(--yellow); translate: 0 0; } .ds-btn-onred:focus-visible { outline: 3px solid var(--plum); outline-offset: 3px; }"
+    },
+    {
+      "name": "Waitlist Field",
+      "kind": "input",
+      "refersTo": "input-email",
+      "description": "Labelled e-mail field with its button on one row and a reserved status line below.",
+      "html": "<form class=\"ds-waitlist\" onsubmit=\"return false\"><label for=\"ds-email\">Your e-mail</label><div class=\"ds-waitlist-row\"><input id=\"ds-email\" class=\"ds-input\" type=\"email\" placeholder=\"you@studio.com\"><button class=\"ds-waitlist-btn\" type=\"submit\">Join the waitlist</button></div><p class=\"ds-waitlist-note\">That does not look like an e-mail address. Check it and try again.</p></form>",
+      "css": ".ds-waitlist { display: grid; gap: 0.6rem; max-width: 34rem; padding: 1.5rem; background: var(--paper); color: var(--blue); font-family: var(--text); font-size: 1.125rem; } .ds-waitlist label { font-weight: 600; } .ds-waitlist-row { display: flex; gap: 0.6rem; flex-wrap: wrap; } .ds-input { flex: 1 1 14rem; min-width: 0; min-height: 3.25rem; padding: 0 0.9rem; border: 2px solid currentColor; border-radius: 0; background: var(--paper); color: var(--blue); font: inherit; caret-color: var(--red); } .ds-input:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; } .ds-waitlist-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 1.4rem; border: 0; border-radius: 0; font: 900 1.45rem/1 var(--display); text-transform: uppercase; letter-spacing: 0.02em; cursor: pointer; white-space: nowrap; transition: box-shadow 0.12s steps(3, end), translate 0.12s steps(3, end); } .ds-waitlist-btn { background: var(--red); color: var(--plum); box-shadow: 0 0 0 0 var(--blue); } .ds-waitlist-btn:hover { box-shadow: 5px 5px 0 0 var(--blue); translate: -2px -2px; } .ds-waitlist-note { margin: 0; font-size: 1rem; font-weight: 600; text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }"
+    },
+    {
+      "name": "Tool Buttons",
+      "kind": "button",
+      "refersTo": "tool",
+      "description": "Outlined controls on the blue frame strip; hover fills paper, a pressed toggle fills yellow.",
+      "html": "<div class=\"ds-tools\"><button class=\"ds-tool\" type=\"button\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M3 1.5v13l11-6.5z\"></path></svg>Play</button><button class=\"ds-tool\" type=\"button\" aria-pressed=\"true\">Onion</button><button class=\"ds-tool\" type=\"button\">Clear</button><span class=\"ds-fps\">12 fps</span></div>",
+      "css": ".ds-tools { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; background: var(--blue); color: var(--paper); } .ds-tool { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 2.75rem; padding: 0 0.8rem; border: 2px solid var(--paper); border-radius: 0; background: none; color: var(--paper); font: 600 1rem/1 var(--text); cursor: pointer; } .ds-tool svg { width: 1.1rem; height: 1.1rem; fill: currentColor; } .ds-tool:hover { background: var(--paper); color: var(--blue); } .ds-tool[aria-pressed='true'] { background: var(--yellow); border-color: var(--yellow); color: var(--blue); } .ds-tool:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; } .ds-fps { font-family: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; margin-left: 0.5rem; }"
+    },
+    {
+      "name": "Frame Cells and Capture",
+      "kind": "custom",
+      "refersTo": "frame-cell",
+      "description": "The frame strip: filled cells with a frame number, the current cell ringed in yellow, dashed empty slots, and the round red Capture button.",
+      "html": "<div class=\"ds-strip\"><ol class=\"ds-cells\"><li class=\"ds-cell ds-cell-on\"><span class=\"ds-cell-n\">1</span></li><li class=\"ds-cell\"><span class=\"ds-cell-n\">2</span></li><li class=\"ds-cell\"><span class=\"ds-cell-n\">3</span></li><li class=\"ds-cell ds-cell-empty\"></li><li class=\"ds-cell ds-cell-empty\"></li></ol><button class=\"ds-capture\" type=\"button\" aria-label=\"Capture this pose as the next frame\"></button></div>",
+      "css": ".ds-strip { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1rem; background: var(--blue); } .ds-cells { flex: 1 1 auto; display: grid; grid-template-columns: repeat(5, minmax(3.25rem, 1fr)); gap: 0.35rem; margin: 0; padding: 2px; list-style: none; } .ds-cell { position: relative; aspect-ratio: 8 / 7; background: var(--paper); border: 2px solid var(--paper); } .ds-cell-empty { background: none; border-style: dashed; border-color: #8f9fe0; } .ds-cell-on { border-color: var(--yellow); outline: 2px solid var(--yellow); } .ds-cell-n { position: absolute; left: 0; bottom: 0; padding: 0 0.3rem; background: var(--blue); color: var(--paper); font: 600 0.75rem/1.4 var(--text); font-variant-numeric: tabular-nums; } .ds-capture { flex: none; width: 4rem; height: 4rem; border-radius: 50%; border: 4px solid var(--paper); background: var(--red); cursor: pointer; transition: scale 0.1s steps(3, end); } .ds-capture:hover { scale: 1.08; } .ds-capture:active { scale: 0.92; } .ds-capture:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }"
+    },
+    {
+      "name": "Misregistered Display Type",
+      "kind": "custom",
+      "refersTo": "field-blue",
+      "description": "Condensed 900 capitals with the red plate a hair off register, on paper and on a blue ink field.",
+      "html": "<div class=\"ds-fields\"><div class=\"ds-field-paper\"><h2 class=\"ds-display\">What comes out</h2></div><div class=\"ds-field-blue\"><h2 class=\"ds-display\">Three pages</h2><p>Reading text is paper knocked out of blue.</p></div></div>",
+      "css": ".ds-fields { display: grid; } .ds-field-paper { background: var(--paper); color: var(--blue); padding: 2rem; } .ds-field-blue { background: var(--blue); color: var(--paper); padding: 2rem; font-family: var(--text); font-size: 1.125rem; line-height: 1.5; } .ds-field-blue p { margin: 0.9rem 0 0; } .ds-display { margin: 0; font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(3rem, 8vw, 5rem); line-height: 0.84; letter-spacing: 0; text-shadow: -0.035em 0.03em 0 var(--red); }"
+    },
+    {
+      "name": "Tipped-in Screenshot",
+      "kind": "card",
+      "refersTo": "field-yellow",
+      "description": "A framed screenshot with one solid ink plate offset down-right behind it and a plain caption.",
+      "html": "<figure class=\"ds-shot\"><div class=\"ds-shot-frame\"><div class=\"ds-shot-img\" role=\"img\" aria-label=\"App screenshot placeholder\"></div></div><figcaption>The Stage: fourteen frames at 12 fps, five of them selected.</figcaption></figure>",
+      "css": ".ds-shot { margin: 0; padding: 2rem 2.5rem 2rem 2rem; background: var(--blue); color: var(--paper); font-family: var(--text); } .ds-shot-frame { position: relative; } .ds-shot-frame::before { content: ''; position: absolute; inset: 0; translate: clamp(0.5rem, 1.2vw, 1rem) clamp(0.5rem, 1.2vw, 1rem); background: var(--red); } .ds-shot-img { position: relative; aspect-ratio: 16 / 10; background: var(--paper); border: 2px solid var(--paper); } .ds-shot figcaption { margin-top: clamp(1.25rem, 2.4vw, 1.9rem); font-size: 1rem; }"
+    },
+    {
+      "name": "Spec Row and Tag",
+      "kind": "custom",
+      "refersTo": "tag-later",
+      "description": "A ruled definition row with a display term, an enlarged value, a note, and the yellow \"later\" tag.",
+      "html": "<dl class=\"ds-specs\"><div class=\"ds-specs-row\"><dt>Export</dt><dd>PNG sequence, H.264 MP4, or ProRes 4444 MOV with alpha.<small>One scene or the whole film.</small></dd></div><div class=\"ds-specs-row\"><dt>Sound</dt><dd>Not yet. <span class=\"ds-later\">later</span></dd></div></dl>",
+      "css": ".ds-specs { margin: 0; padding: 0 1.5rem; background: var(--paper); color: var(--blue); border-top: 2px solid var(--blue); font-family: var(--text); } .ds-specs-row { display: grid; grid-template-columns: minmax(8rem, 3fr) 9fr; column-gap: clamp(1rem, 3vw, 3rem); align-items: baseline; padding-block: clamp(0.9rem, 1.6vw, 1.4rem); border-bottom: 2px solid var(--blue); } .ds-specs dt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.6rem, 2.6vw, 2.5rem); line-height: 0.95; color: var(--blue); } .ds-specs dd { margin: 0; font-size: clamp(1.15rem, 1.7vw, 1.6rem); line-height: 1.35; max-width: 48ch; } .ds-specs dd small { display: block; font-size: 1rem; margin-top: 0.25rem; } .ds-later { display: inline-block; padding: 0 0.45rem; background: var(--yellow); font-size: 1rem; font-weight: 600; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Three-Ink Sheet",
+    "overview": "The website is one risograph sheet: warm paper with tooth, and three spot inks laid on it. Federal blue, fluorescent red-orange and sunflower yellow are the only inks in the drum. Where two cross they multiply into a third colour (blue over yellow prints green, blue over red prints plum), and those overprints are the only other colours allowed. There is no black and no grey anywhere: reading text is blue ink on paper, paper knocked out of blue, or plum on red.\n\nThe system is loud and flat. Heavy condensed capitals carry a red ghost printed a hair out of register; whole sections are flooded with a single ink edge to edge; app screenshots are tipped onto the sheet with one ink plate showing behind them. Illustration is cut paper: rounded shapes with a wobbling scissor edge, multiplied onto whatever lies beneath, including the headline. The red ghost is also the product's onion skin, so the print fault and the feature are the same mark.\n\nMotion is stop-motion. Everything moves in steps (`steps(3, end)` over 0.12s for controls, 12 frames a second for playback, a two-step flash on capture); nothing is eased. With `prefers-reduced-motion`, transitions, the capture flash and autoplay are off.",
+    "keyCharacteristics": [
+      "Three spot inks on warm paper; overprints by multiplication; no black, no grey.",
+      "Section-wide single ink fields, changing ink from section to section.",
+      "Condensed 900-weight capitals at poster scale with a misregistered red plate.",
+      "Square corners everywhere; the only round thing is the Capture button.",
+      "Depth comes from offset plates and overprint, never from soft shadows.",
+      "Paper grain and ink speckle sit over the entire sheet.",
+      "Stepped, 12 fps motion."
+    ],
+    "rules": [
+      {
+        "name": "The Three Drums Rule",
+        "body": "Every colour on the sheet is one of the three inks, the paper, or a named overprint of two inks. A new colour has to be explainable as ink over ink; otherwise it does not print.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Black Rule",
+        "body": "Nothing is black or grey. The darkest value is Overprint Plum, and it appears only where blue and red would physically cross or as text on red.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Pairing Rule",
+        "body": "Text pairs are fixed: blue on paper (6.8:1), paper on blue (6.8:1), blue on yellow (5.3:1), yellow on blue for large or bold accents (5.3:1), plum on red (5.2:1), paper on plum. Red and yellow are never text inks on paper, and red is never text on blue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Overprint Rule",
+        "body": "Illustration and the stage are set to `mix-blend-mode: multiply`, so shapes darken what they cross instead of covering it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Misregister Rule",
+        "body": "Blue display type on paper, and paper display type on blue, carries the red plate as a hard `text-shadow` offset by `-0.035em, 0.03em` with zero blur. Because the offset is in em it scales with the type. It is not applied on yellow or red fields, nor to body text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Capitals Rule",
+        "body": "Big Shoulders is only ever 900 and uppercase, with letter-spacing 0 (0.02em on button labels). Familjen Grotesk is never uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plate Rule",
+        "body": "An offset is always a solid, hard-edged block of one of the three inks, displaced down and to the right. It is never blurred, never translucent, never black.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Sheet Rule",
+        "body": "Nothing floats. No cards, no raised panels, no glass; a section is a field of ink and its contents are printed on it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** build every colour from the three inks, the paper, or a named overprint, and reference the `:root` custom properties (`--blue`, `--red`, `--yellow`, `--paper`, `--green`, `--plum`, `--skin`).",
+      "**Do** flood a whole section with one ink and change ink at the next section.",
+      "**Do** set display type in Big Shoulders Display 900, uppercase, line-height 0.8–0.9, and give it the red misregistered plate on paper and on blue.",
+      "**Do** keep corners square and lines 2px solid; reserve the circle for Capture.",
+      "**Do** show depth with a hard, solid ink plate offset down-right, and use `mix-blend-mode: multiply` for illustration over type.",
+      "**Do** move in steps: `steps(3, end)` at 0.12s for controls, 12 fps for sequences, and switch motion off under `prefers-reduced-motion`.",
+      "**Do** switch the focus ring to the ink that contrasts with the field: yellow on blue, plum on red.",
+      "**Do** show real app screenshots, framed, plated and captioned with what is on screen."
+    ],
+    "donts": [
+      "**Don't** use black, grey, or any colour that is not an ink, the paper, or an overprint.",
+      "**Don't** use soft shadows, blur, gradients, glass or translucent panels.",
+      "**Don't** round corners on interface elements or wrap content in cards.",
+      "**Don't** ease, fade or tween; no smooth transitions between states or poses.",
+      "**Don't** set body text in red or yellow on paper, or red on blue; the pairs in the Ink Pairing Rule are the only text pairs.",
+      "**Don't** set Big Shoulders in lower case or lighter weights, or Familjen Grotesk in capitals.",
+      "**Don't** put the misregistered ghost on body text, or on type printed on yellow or red.",
+      "**Don't** blur or soften an offset plate, or offset it up or to the left."
+    ]
+  }
+}
