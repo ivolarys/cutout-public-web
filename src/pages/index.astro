@@ -8,6 +8,9 @@ import rig from '../assets/shots/rig.png';
 import stage from '../assets/shots/stage.png';
 import focus from '../assets/shots/focus.png';
 
+// The site may live under a path (GitHub Pages), so files in public/ are addressed from the base.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
+
 const title = 'CutOut Studio — the cut-out animation table, on a pen display';
 const description =
   'CutOut Studio brings paper cut-out animation to a pen display. Cut your parts by hand, pin them, pose them frame by frame, the way you do at the table. In testing for macOS and Windows.';
@@ -90,8 +93,9 @@ const specs = [
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta name="robots" content="noindex" />
     <meta name="theme-color" content="#f0e9da" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href={`${base}favicon.png`} />
   </head>
   <body>
     <svg class="grain grain--dark" aria-hidden="true">
@@ -110,8 +114,8 @@ const specs = [
     </svg>
 
     <header class="wrap nav">
-      <a class="nav__brand" href="/">
-        <img src="/icon.png" alt="" width="36" height="36" />
+      <a class="nav__brand" href={base}>
+        <img src={`${base}icon.png`} alt="" width="36" height="36" />
         CutOut Studio
       </a>
       <a class="nav__link" href="#craft">The craft</a>
@@ -345,7 +349,7 @@ const specs = [
             </div>
           </div>
           <footer class="footer">
-            <span class="footer__brand"><img src="/icon.png" alt="" width="32" height="32" /> CutOut Studio</span>
+            <span class="footer__brand"><img src={`${base}icon.png`} alt="" width="32" height="32" /> CutOut Studio</span>
             <span>Version 0.4.1, in testing</span>
             <span>© 2026</span>
           </footer>

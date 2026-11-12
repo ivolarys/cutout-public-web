@@ -29,4 +29,6 @@ The two forms post `{"email": "..."}` as JSON to the address in `PUBLIC_WAITLIST
 - `icon/` — the app icon proposals. `python3 make_icons.py` redraws the SVGs, the 1024 px PNGs and `contact-sheet.png` (needs `rsvg-convert`). Proposal A is what `public/icon.png` and `public/favicon.png` are made from.
 - `PRODUCT.md` — what the product is and what the site may claim. `DESIGN.md` — the visual system.
 
-Set `site` in `astro.config.mjs` once the domain is known.
+## Publishing
+
+Every push to `main` builds the site and publishes it to GitHub Pages at https://ivolarys.github.io/cutout-public-web/ (`.github/workflows/deploy.yml`). The page asks search engines not to index it while it is on this address. With a domain of its own, set `site` in `astro.config.mjs`, drop `base` and remove the `robots` line in `src/pages/index.astro`.
